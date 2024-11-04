@@ -96,6 +96,7 @@ export const About = () => {
         <div className="flex flex-col gap-4 px-8 lg:hidden">
           {["Front-End", "Styles"].map((title) => (
             <div
+              key={title}
               className={cn(
                 "w-full rounded-3xl p-8 space-y-4",
                 title === "Front-End"
