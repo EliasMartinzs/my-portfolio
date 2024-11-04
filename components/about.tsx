@@ -94,7 +94,7 @@ export const About = () => {
         </div>
 
         <div className="flex flex-col gap-4 px-8 lg:hidden">
-          {["Front-End", "Styles"].map((title, index) => (
+          {["Front-End", "Styles"].map((title) => (
             <div
               className={cn(
                 "w-full rounded-3xl p-8 space-y-4",
