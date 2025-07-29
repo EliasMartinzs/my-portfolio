@@ -11,9 +11,13 @@ import Vercel from "@/public/vercel.svg";
 import Readder1 from "@/public/readder-1.png";
 import Readder2 from "@/public/readder-2.png";
 import Readder3 from "@/public/readder-3.png";
-import Gym1 from "@/public/gym1.png"
-import Gym2 from "@/public/gym2.png"
-import Gym3 from "@/public/gym3.png"
+import Gym1 from "@/public/gym1.png";
+import Gym2 from "@/public/gym2.png";
+import Gym3 from "@/public/gym3.png";
+import Amb1 from "@/public/amb1.png";
+import Amb2 from "@/public/amb2.png";
+import Amb3 from "@/public/amb3.png";
+
 import Image, { StaticImageData } from "next/image";
 import { Separator } from "./ui/separator";
 import Link from "next/link";
@@ -58,6 +62,26 @@ export const Projects = () => {
             image3={Church3}
             deploy="https://church-livid.vercel.app/"
             github="https://github.com/EliasMartinzs/church"
+          />
+
+          <Separator className="bg-muted-foreground" />
+
+          <ProjectMobile
+            projectName="Ambicious"
+            projectDate="19/09/23"
+            technologies={[
+              "Next Js",
+              "MongoDb",
+              "Clerk Dev",
+              "Tailwind CSS",
+              "Swiper",
+            ]}
+            description="Existem melhorias a serem feitas, especialmente em termos de ajustes visuais que pretendo corrigir com o tempo. O código em si está um pouco complexo. Como eu fiz a construção do backend e da sua integração com o frontend, estou me aventurando em uma área completamente nova para mim. Este desafio envolve não apenas o desenvolvimento do backend, uma tarefa com a qual não tenho experiência prévia, mas também a coordenação precisa com o frontend para garantir uma funcionalidade harmoniosa entre as duas partes do projeto. Para enfrentar esse desafio, experimentei uma variedade de estilos na criação, exclusão e atualização de dados, assim como diferentes abordagens na construção de formulários, utilizando inputs, controllers, Hook Form, Zod e até mesmo o uso do 'useState' para criação de formulários."
+            image1={Amb1}
+            image2={Amb2}
+            image3={Amb3}
+            deploy=""
+            github="https://github.com/EliasMartinzs/ambicious-nextjs"
           />
 
           <Separator className="bg-muted-foreground" />
@@ -115,7 +139,7 @@ export const Projects = () => {
               "Shadcn Ui",
               "Hono",
               "Zustand",
-              "Zod"
+              "Zod",
             ]}
             description="Um aplicativo web eficiente permite que personal trainers gerenciem alunos, treinos e horários de maneira prática. O sistema disponibiliza um painel com informações fundamentais (quantidade de alunos, exercícios mais recomendados, distribuição por objetivos), registro e monitoramento de alunos (status, tempo de relacionamento, aniversários), elaboração de templates de treino reutilizáveis ou personalizados, além de uma agenda para gerenciamento de aulas. Com temas claros e escuros, gráficos interativos e formulários simplificados, o aplicativo contribui para a automação de tarefas e aprimoramento do acompanhamento dos estudantes. Desenvolvido utilizando Next.js, TypeScript e Tailwind CSS."
             image1={Gym1}
@@ -129,6 +153,24 @@ export const Projects = () => {
 
       {/* Desktop */}
       <div className="hidden lg:flex flex-col gap-y-40">
+        <ProjectDesktop
+          title="Ambicious"
+          date="19/09/23"
+          deploy=""
+          github="https://github.com/EliasMartinzs/ambicious-nextjs"
+          data={[Amb1, Amb2, Amb3]}
+          side="right"
+          technologies={[
+            "Next Js",
+            "MongoDb",
+            "Clerk Dev",
+            "Tailwind CSS",
+            "Swiper",
+          ]}
+          key="ambci"
+          description="Existem melhorias a serem feitas, especialmente em termos de ajustes visuais que pretendo corrigir com o tempo. O código em si está um pouco complexo. Como eu fiz a construção do backend e da sua integração com o frontend, estou me aventurando em uma área completamente nova para mim. Este desafio envolve não apenas o desenvolvimento do backend, uma tarefa com a qual não tenho experiência prévia, mas também a coordenação precisa com o frontend para garantir uma funcionalidade harmoniosa entre as duas partes do projeto. Para enfrentar esse desafio, experimentei uma variedade de estilos na criação, exclusão e atualização de dados, assim como diferentes abordagens na construção de formulários, utilizando inputs, controllers, Hook Form, Zod e até mesmo o uso do 'useState' para criação de formulários."
+        />
+
         <ProjectDesktop
           title="Cramb"
           date="30/10/24"
@@ -189,22 +231,22 @@ export const Projects = () => {
         Desenvolvi este projeto inspirado em uma ideia de um amigo, para uma igreja onde o pastor ou padre pode criar e gerenciar células de encontro para a comunidade. Cada célula tem um secretário responsável por sua organização, e ele pode criar reuniões, cadastrar novos membros e gerenciar pedidos de oração, seja individual ou em grupo. Os membros podem acessar os perfis de outros participantes, visualizar suas próximas reuniões, marcar presença nas atividades e fazer pedidos de oração para si mesmos ou para conhecidos. O acesso à plataforma é feito por login, criado e enviado por e-mail pelo pastor ou secretário para cada usuário (pastor, secretário ou membro)."
         />
 
-             <ProjectDesktop
+        <ProjectDesktop
           title="Gym Os"
           date="29/06/25"
-              deploy="https://gym-os-six.vercel.app/"
-            github="https://github.com/EliasMartinzs/gym-os"
+          deploy="https://gym-os-six.vercel.app/"
+          github="https://github.com/EliasMartinzs/gym-os"
           data={[Gym1, Gym2, Gym3]}
           side="right"
           technologies={[
-                  "Next Js",
-              "Prisma",
-              "Clerk Dev",
-              "Tailwind CSS",
-              "Shadcn Ui",
-              "Hono",
-              "Zustand",
-              "Zod"
+            "Next Js",
+            "Prisma",
+            "Clerk Dev",
+            "Tailwind CSS",
+            "Shadcn Ui",
+            "Hono",
+            "Zustand",
+            "Zod",
           ]}
           key="gym-os"
           description="Um aplicativo web eficiente permite que personal trainers gerenciem alunos, treinos e horários de maneira prática. O sistema disponibiliza um painel com informações fundamentais (quantidade de alunos, exercícios mais recomendados, distribuição por objetivos), registro e monitoramento de alunos (status, tempo de relacionamento, aniversários), elaboração de templates de treino reutilizáveis ou personalizados, além de uma agenda para gerenciamento de aulas. Com temas claros e escuros, gráficos interativos e formulários simplificados, o aplicativo contribui para a automação de tarefas e aprimoramento do acompanhamento dos estudantes. Desenvolvido utilizando Next.js, TypeScript e Tailwind CSS."
