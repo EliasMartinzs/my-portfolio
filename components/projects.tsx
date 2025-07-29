@@ -11,6 +11,9 @@ import Vercel from "@/public/vercel.svg";
 import Readder1 from "@/public/readder-1.png";
 import Readder2 from "@/public/readder-2.png";
 import Readder3 from "@/public/readder-3.png";
+import Gym1 from "@/public/gym1.png"
+import Gym2 from "@/public/gym2.png"
+import Gym3 from "@/public/gym3.png"
 import Image, { StaticImageData } from "next/image";
 import { Separator } from "./ui/separator";
 import Link from "next/link";
@@ -98,6 +101,29 @@ export const Projects = () => {
             deploy="https://readder.vercel.app/"
             github="https://github.com/EliasMartinzs/readder"
           />
+
+          <Separator className="bg-muted-foreground" />
+
+          <ProjectMobile
+            projectName="Gym Os"
+            projectDate="29/06/25"
+            technologies={[
+              "Next Js",
+              "Prisma",
+              "Clerk Dev",
+              "Tailwind CSS",
+              "Shadcn Ui",
+              "Hono",
+              "Zustand",
+              "Zod"
+            ]}
+            description="Um aplicativo web eficiente permite que personal trainers gerenciem alunos, treinos e horários de maneira prática. O sistema disponibiliza um painel com informações fundamentais (quantidade de alunos, exercícios mais recomendados, distribuição por objetivos), registro e monitoramento de alunos (status, tempo de relacionamento, aniversários), elaboração de templates de treino reutilizáveis ou personalizados, além de uma agenda para gerenciamento de aulas. Com temas claros e escuros, gráficos interativos e formulários simplificados, o aplicativo contribui para a automação de tarefas e aprimoramento do acompanhamento dos estudantes. Desenvolvido utilizando Next.js, TypeScript e Tailwind CSS."
+            image1={Gym1}
+            image2={Gym2}
+            image3={Gym3}
+            deploy="https://gym-os-six.vercel.app/"
+            github="https://github.com/EliasMartinzs/gym-os"
+          />
         </div>
       </div>
 
@@ -161,6 +187,27 @@ export const Projects = () => {
           key="readder"
           description="
         Desenvolvi este projeto inspirado em uma ideia de um amigo, para uma igreja onde o pastor ou padre pode criar e gerenciar células de encontro para a comunidade. Cada célula tem um secretário responsável por sua organização, e ele pode criar reuniões, cadastrar novos membros e gerenciar pedidos de oração, seja individual ou em grupo. Os membros podem acessar os perfis de outros participantes, visualizar suas próximas reuniões, marcar presença nas atividades e fazer pedidos de oração para si mesmos ou para conhecidos. O acesso à plataforma é feito por login, criado e enviado por e-mail pelo pastor ou secretário para cada usuário (pastor, secretário ou membro)."
+        />
+
+             <ProjectDesktop
+          title="Gym Os"
+          date="29/06/25"
+              deploy="https://gym-os-six.vercel.app/"
+            github="https://github.com/EliasMartinzs/gym-os"
+          data={[Gym1, Gym2, Gym3]}
+          side="right"
+          technologies={[
+                  "Next Js",
+              "Prisma",
+              "Clerk Dev",
+              "Tailwind CSS",
+              "Shadcn Ui",
+              "Hono",
+              "Zustand",
+              "Zod"
+          ]}
+          key="gym-os"
+          description="Um aplicativo web eficiente permite que personal trainers gerenciem alunos, treinos e horários de maneira prática. O sistema disponibiliza um painel com informações fundamentais (quantidade de alunos, exercícios mais recomendados, distribuição por objetivos), registro e monitoramento de alunos (status, tempo de relacionamento, aniversários), elaboração de templates de treino reutilizáveis ou personalizados, além de uma agenda para gerenciamento de aulas. Com temas claros e escuros, gráficos interativos e formulários simplificados, o aplicativo contribui para a automação de tarefas e aprimoramento do acompanhamento dos estudantes. Desenvolvido utilizando Next.js, TypeScript e Tailwind CSS."
         />
       </div>
     </section>
