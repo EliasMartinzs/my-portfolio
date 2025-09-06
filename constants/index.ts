@@ -114,6 +114,8 @@ export const frontEnd = [
   "React Query",
   "TypeScript",
   "JavaScript",
+  "Vitest",
+  "Jest",
   "HTML",
   "CSS",
   "Webpack",
