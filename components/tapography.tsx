@@ -19,9 +19,7 @@ export const Tapography = () => {
 
           <p className="max-w-2xl mx-auto">
             Utilizei a fonte JetBrains Mono para garantir máxima legibilidade e
-            um visual moderno. Essa fonte é perfeita para sites de
-            desenvolvedores front-end, conferindo um estilo semelhante ao de
-            código, que melhora a experiência de leitura e dá um toque
+            um visual moderno. Melhora a experiência de leitura e dá um toque
             profissional ao design.
           </p>
 
@@ -45,11 +43,9 @@ export const Tapography = () => {
 
           <div className="h-96 flex flex-col gap-5">
             <small>
-              Utilizei a fonte JetBrains Mono para garantir máxima legibilidade
-              e um visual moderno. Essa fonte é perfeita para sites de
-              desenvolvedores front-end, conferindo um estilo semelhante ao de
-              código, que melhora a experiência de leitura e dá um toque
-              profissional ao design.
+                Utilizei a fonte JetBrains Mono para garantir máxima legibilidade e
+            um visual moderno. Melhora a experiência de leitura e dá um toque
+            profissional ao design.
             </small>
 
             <div className="rounded-3xl bg-foreground border border-foreground text-background h-full grid place-items-center">
@@ -65,11 +61,9 @@ export const Tapography = () => {
             </div>
 
             <small className="text-background cursor-default">
-              Utilizei a fonte JetBrains Mono para garantir máxima legibilidade
-              e um visual moderno. Essa fonte é perfeita para sites de
-              desenvolvedores front-end, conferindo um estilo semelhante ao de
-              código, que melhora a experiência de leitura e dá um toque
-              profissional ao design.
+                Utilizei a fonte JetBrains Mono para garantir máxima legibilidade e
+            um visual moderno. Melhora a experiência de leitura e dá um toque
+            profissional ao design.
             </small>
           </div>
 
