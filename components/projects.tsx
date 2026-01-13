@@ -21,7 +21,6 @@ import Neura1 from "@/public/neura-1.png";
 import Neura2 from "@/public/neura-2.png";
 import Neura3 from "@/public/neura-3.png";
 
-
 import Image, { StaticImageData } from "next/image";
 import { Separator } from "./ui/separator";
 import Link from "next/link";
@@ -152,33 +151,32 @@ export const Projects = () => {
             deploy="https://gym-os-six.vercel.app/"
             github="https://github.com/EliasMartinzs/gym-os"
           />
- <Separator className="bg-muted-foreground" />
+          <Separator className="bg-muted-foreground" />
           <ProjectMobile
-  projectName="Neura"
-  projectDate="2026"
-  technologies={[
-    "Next.js",
-    "TypeScript",
-    "Prisma",
-    "PostgreSQL",
-    "Tailwind CSS",
-    "Shadcn UI",
-    "React Query",
-    "OpenAI",
-    "Framer Motion",
-  ]}
-  description="Neura é uma plataforma inteligente de estudos focada em aprendizado ativo e retenção de conhecimento. 
+            projectName="Neura"
+            projectDate="2026"
+            technologies={[
+              "Next.js",
+              "TypeScript",
+              "Prisma",
+              "PostgreSQL",
+              "Tailwind CSS",
+              "Shadcn UI",
+              "React Query",
+              "OpenAI",
+              "Framer Motion",
+            ]}
+            description="Neura é uma plataforma inteligente de estudos focada em aprendizado ativo e retenção de conhecimento. 
   O projeto permite que usuários criem flashcards manualmente ou utilizem inteligência artificial para gerar cartões automaticamente a partir de temas, tópicos e níveis de dificuldade personalizados. 
   A aplicação implementa o método de revisão espaçada (SM-2), ajustando automaticamente os intervalos de revisão com base nos acertos e erros do usuário, otimizando o processo de memorização. 
   Além disso, conta com quizzes gerados por IA e a funcionalidade 'Explique e Aprenda', onde o usuário explica um tema com suas próprias palavras, a IA gera perguntas relacionadas e avalia a resposta fornecendo feedback detalhado sobre acertos, erros e pontos de melhoria. 
   O objetivo do Neura é transformar o estudo passivo em um processo interativo, personalizado e eficiente."
-  image1={Neura1}
-  image2={Neura2}
-  image3={Neura3}
-  deploy=""
-  github="https://github.com/EliasMartinzs/neura"
-/>
-
+            image1={Neura1}
+            image2={Neura2}
+            image3={Neura3}
+            deploy="https://neura-kappa.vercel.app/"
+            github="https://github.com/EliasMartinzs/neura"
+          />
         </div>
       </div>
 
@@ -284,31 +282,30 @@ export const Projects = () => {
         />
 
         <ProjectDesktop
-  title="Neura"
-  date="2026"
-  deploy=""
-  github="https://github.com/EliasMartinzs/neura"
-  data={[Neura1, Neura2, Neura3]}
-  side="right"
-  technologies={[
-    "Next.js",
-    "TypeScript",
-    "Prisma",
-    "PostgreSQL",
-    "Tailwind CSS",
-    "Shadcn UI",
-    "React Query",
-    "OpenAI API",
-    "Framer Motion",
-  ]}
-  key="neura"
-  description="Neura é um projeto completo de plataforma educacional desenvolvido para aplicar conceitos modernos de aprendizado, como estudo ativo, feedback imediato e revisão espaçada. 
+          title="Neura"
+          date="2026"
+          deploy="https://neura-kappa.vercel.app/"
+          github="https://github.com/EliasMartinzs/neura"
+          data={[Neura1, Neura2, Neura3]}
+          side="right"
+          technologies={[
+            "Next.js",
+            "TypeScript",
+            "Prisma",
+            "PostgreSQL",
+            "Tailwind CSS",
+            "Shadcn UI",
+            "React Query",
+            "OpenAI API",
+            "Framer Motion",
+          ]}
+          key="neura"
+          description="Neura é um projeto completo de plataforma educacional desenvolvido para aplicar conceitos modernos de aprendizado, como estudo ativo, feedback imediato e revisão espaçada. 
   O sistema permite a criação de flashcards de forma manual ou automática por meio de inteligência artificial, que gera conteúdos com base em temas, tópicos e níveis de dificuldade definidos pelo usuário. 
   A lógica de revisão utiliza o algoritmo SM-2, adaptando os intervalos de estudo conforme o desempenho individual, aumentando a eficiência da memorização ao longo do tempo. 
   O projeto também inclui quizzes dinâmicos gerados por IA e a funcionalidade 'Explique e Aprenda', onde o usuário responde perguntas com texto livre e recebe uma avaliação inteligente da IA, destacando acertos, erros conceituais e sugestões de melhoria. 
   Do ponto de vista técnico, o projeto explora integração avançada com IA, gerenciamento de estado assíncrono, arquitetura escalável e uma interface moderna focada em experiência do usuário."
-/>
-
+        />
       </div>
     </section>
   );
