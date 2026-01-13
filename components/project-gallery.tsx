@@ -29,7 +29,7 @@ export const ProjectGallery = ({ data }: Props) => {
             <Image
               src={img}
               alt="aa"
-              className="object- w-full h-full object-center rounded-3xl shadow-2xl"
+              className="w-full h-full object-center rounded-3xl shadow-2xl"
             />
           </SwiperSlide>
         ))}

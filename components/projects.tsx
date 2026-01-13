@@ -20,6 +20,7 @@ import Amb3 from "@/public/amb3.png";
 import Neura1 from "@/public/neura-1.png";
 import Neura2 from "@/public/neura-2.png";
 import Neura3 from "@/public/neura-3.png";
+import NeuraShowcase from "@/public/neura-showcase.png";
 
 import Image, { StaticImageData } from "next/image";
 import { Separator } from "./ui/separator";
@@ -177,6 +178,30 @@ export const Projects = () => {
             deploy="https://neura-kappa.vercel.app/"
             github="https://github.com/EliasMartinzs/neura"
           />
+
+          <ProjectMobile
+            projectName="Neura App"
+            projectDate="2026"
+            technologies={[
+              "React Native",
+              "Expo",
+              "TypeScript",
+              "Axios",
+              "Nativewind",
+              "React Query",
+            ]}
+            description="App do Neura, desenvolvido em React Native com Expo, utilizando a mesma API do Neura Web.
+O backend foi construído com Hono.js em conjunto com Next.js.
+A API é consumida no app por meio de Axios e React Query.
+
+Para testar o aplicativo, basta baixar o repositório na sua máquina e executar o build de sua preferência.
+A API é pública e já está configurada dentro do repositório."
+            image1={NeuraShowcase}
+            image2={NeuraShowcase}
+            image3={NeuraShowcase}
+            deploy="https://neura-kappa.vercel.app/"
+            github="https://github.com/EliasMartinzs/neura-mobile"
+          />
         </div>
       </div>
 
@@ -305,6 +330,30 @@ export const Projects = () => {
   A lógica de revisão utiliza o algoritmo SM-2, adaptando os intervalos de estudo conforme o desempenho individual, aumentando a eficiência da memorização ao longo do tempo. 
   O projeto também inclui quizzes dinâmicos gerados por IA e a funcionalidade 'Explique e Aprenda', onde o usuário responde perguntas com texto livre e recebe uma avaliação inteligente da IA, destacando acertos, erros conceituais e sugestões de melhoria. 
   Do ponto de vista técnico, o projeto explora integração avançada com IA, gerenciamento de estado assíncrono, arquitetura escalável e uma interface moderna focada em experiência do usuário."
+        />
+
+        <ProjectDesktop
+          title="Neura App"
+          date="2026"
+          deploy=""
+          github="https://github.com/EliasMartinzs/neura-mobile"
+          data={[NeuraShowcase, NeuraShowcase, NeuraShowcase]}
+          side="right"
+          technologies={[
+            "React Native",
+            "Expo",
+            "TypeScript",
+            "Axios",
+            "Nativewind",
+            "React Query",
+          ]}
+          key="neura"
+          description="App do Neura, desenvolvido em React Native com Expo, utilizando a mesma API do Neura Web.
+O backend foi construído com Hono.js em conjunto com Next.js.
+A API é consumida no app por meio de Axios e React Query.
+
+Para testar o aplicativo, basta baixar o repositório na sua máquina e executar o build de sua preferência.
+A API é pública e já está configurada dentro do repositório."
         />
       </div>
     </section>
