@@ -17,6 +17,10 @@ import Gym3 from "@/public/gym3.png";
 import Amb1 from "@/public/amb1.png";
 import Amb2 from "@/public/amb2.png";
 import Amb3 from "@/public/amb3.png";
+import Neura1 from "@/public/neura-1.png";
+import Neura2 from "@/public/neura-2.png";
+import Neura3 from "@/public/neura-3.png";
+
 
 import Image, { StaticImageData } from "next/image";
 import { Separator } from "./ui/separator";
@@ -148,6 +152,33 @@ export const Projects = () => {
             deploy="https://gym-os-six.vercel.app/"
             github="https://github.com/EliasMartinzs/gym-os"
           />
+ <Separator className="bg-muted-foreground" />
+          <ProjectMobile
+  projectName="Neura"
+  projectDate="2026"
+  technologies={[
+    "Next.js",
+    "TypeScript",
+    "Prisma",
+    "PostgreSQL",
+    "Tailwind CSS",
+    "Shadcn UI",
+    "React Query",
+    "OpenAI",
+    "Framer Motion",
+  ]}
+  description="Neura é uma plataforma inteligente de estudos focada em aprendizado ativo e retenção de conhecimento. 
+  O projeto permite que usuários criem flashcards manualmente ou utilizem inteligência artificial para gerar cartões automaticamente a partir de temas, tópicos e níveis de dificuldade personalizados. 
+  A aplicação implementa o método de revisão espaçada (SM-2), ajustando automaticamente os intervalos de revisão com base nos acertos e erros do usuário, otimizando o processo de memorização. 
+  Além disso, conta com quizzes gerados por IA e a funcionalidade 'Explique e Aprenda', onde o usuário explica um tema com suas próprias palavras, a IA gera perguntas relacionadas e avalia a resposta fornecendo feedback detalhado sobre acertos, erros e pontos de melhoria. 
+  O objetivo do Neura é transformar o estudo passivo em um processo interativo, personalizado e eficiente."
+  image1={Neura1}
+  image2={Neura2}
+  image3={Neura3}
+  deploy=""
+  github="https://github.com/EliasMartinzs/neura"
+/>
+
         </div>
       </div>
 
@@ -251,6 +282,33 @@ export const Projects = () => {
           key="gym-os"
           description="Um aplicativo web eficiente permite que personal trainers gerenciem alunos, treinos e horários de maneira prática. O sistema disponibiliza um painel com informações fundamentais (quantidade de alunos, exercícios mais recomendados, distribuição por objetivos), registro e monitoramento de alunos (status, tempo de relacionamento, aniversários), elaboração de templates de treino reutilizáveis ou personalizados, além de uma agenda para gerenciamento de aulas. Com temas claros e escuros, gráficos interativos e formulários simplificados, o aplicativo contribui para a automação de tarefas e aprimoramento do acompanhamento dos estudantes. Desenvolvido utilizando Next.js, TypeScript e Tailwind CSS."
         />
+
+        <ProjectDesktop
+  title="Neura"
+  date="2026"
+  deploy=""
+  github="https://github.com/EliasMartinzs/neura"
+  data={[Neura1, Neura2, Neura3]}
+  side="right"
+  technologies={[
+    "Next.js",
+    "TypeScript",
+    "Prisma",
+    "PostgreSQL",
+    "Tailwind CSS",
+    "Shadcn UI",
+    "React Query",
+    "OpenAI API",
+    "Framer Motion",
+  ]}
+  key="neura"
+  description="Neura é um projeto completo de plataforma educacional desenvolvido para aplicar conceitos modernos de aprendizado, como estudo ativo, feedback imediato e revisão espaçada. 
+  O sistema permite a criação de flashcards de forma manual ou automática por meio de inteligência artificial, que gera conteúdos com base em temas, tópicos e níveis de dificuldade definidos pelo usuário. 
+  A lógica de revisão utiliza o algoritmo SM-2, adaptando os intervalos de estudo conforme o desempenho individual, aumentando a eficiência da memorização ao longo do tempo. 
+  O projeto também inclui quizzes dinâmicos gerados por IA e a funcionalidade 'Explique e Aprenda', onde o usuário responde perguntas com texto livre e recebe uma avaliação inteligente da IA, destacando acertos, erros conceituais e sugestões de melhoria. 
+  Do ponto de vista técnico, o projeto explora integração avançada com IA, gerenciamento de estado assíncrono, arquitetura escalável e uma interface moderna focada em experiência do usuário."
+/>
+
       </div>
     </section>
   );
