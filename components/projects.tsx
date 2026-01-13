@@ -287,7 +287,7 @@ export const Projects = () => {
           deploy="https://neura-kappa.vercel.app/"
           github="https://github.com/EliasMartinzs/neura"
           data={[Neura1, Neura2, Neura3]}
-          side="right"
+          side="left"
           technologies={[
             "Next.js",
             "TypeScript",
