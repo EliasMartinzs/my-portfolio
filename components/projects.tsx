@@ -20,7 +20,7 @@ export const Projects = () => {
 
       {/* Desktop */}
       <div className="hidden lg:flex flex-col gap-y-40">
-        {projects.map((project, index) => (
+        {projects.reverse().map((project, index) => (
           <ProjectDesktop
             key={project.projectName}
             {...project}
